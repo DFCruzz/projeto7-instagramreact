@@ -2,13 +2,13 @@ function Logo() {
     return (
         <div class="logo-container">
             <div class="logo-icon">
-                <a href="#">
+                <a href="/#">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </div>
             <div class="logo-divider"></div>
             <div class="logo-name">
-                <a href="#"><img src="./assets/img/logo 1.jpg" alt="instagram" /></a>
+                <a href="/#"><img src="./assets/img/logo 1.jpg" alt="instagram" /></a>
             </div>
         </div>
     )
@@ -27,16 +27,16 @@ function SearchBar() {
 function NavBar() {
     return (
         <div class="header-icons">
-            <a href="#">
+            <a href="/#">
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </a>
-            <a href="#">
+            <a href="/#">
                 <ion-icon name="compass-outline"></ion-icon>
             </a>
-            <a href="#">
+            <a href="/#">
                 <ion-icon name="heart-outline"></ion-icon>
             </a>
-            <a href="#">
+            <a href="/#">
                 <ion-icon name="person-outline"></ion-icon>
             </a>
         </div>
