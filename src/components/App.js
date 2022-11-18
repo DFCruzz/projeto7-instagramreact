@@ -1,5 +1,6 @@
 import Header from "./Header";
 import MainContainer from "./MainContainer";
+import SideContainer from "./SideContainer";
 
 export default function App() {
     return (
@@ -7,6 +8,7 @@ export default function App() {
             <Header />
             <div class="body-container">
                 <MainContainer />
+                <SideContainer />
             </div>
         </div>
     )
