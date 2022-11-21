@@ -16,7 +16,7 @@ export default function UserProfile() {
 
     return (
         <div data-test="user" className="user-profile">
-            <div data-test="profile-image" onClick={trocarFoto} className="user-image"><img src={userPic} alt="user" /></div>
+            <div data-test="profile-image" onClick={trocarFoto} className="user-image"><img src={!userPic ? "./assets/img/Diego.jpg" : `${userPic}`} alt="user" /></div>
             <div className="user-id">
                 <div className="nickname">DFCruzz</div>
                 <div className="name-box">
