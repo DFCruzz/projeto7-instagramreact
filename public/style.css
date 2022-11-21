@@ -234,9 +234,14 @@ input::placeholder {
     padding: 0px 4px;
 }
 
+.left-icons ion-icon[name="heart"] {
+    color: red;
+}
+
 .right-icons {
     margin-right: 16px;
 }
+
 
 .bottom-comments {
     display: flex;
@@ -345,6 +350,11 @@ input::placeholder {
 
 .user-image img {
     width: 56px;
+    height: 56px;
+}
+
+.suggestion-image img {
+    width: 56px
 }
 
 .nickname, .right-suggestion {
@@ -354,6 +364,14 @@ input::placeholder {
 
 .nickname  {
     margin-bottom: 4px;
+}
+
+.name-box {
+    display:  flex;
+}
+
+.name-box ion-icon {
+    margin-left: 8px;
 }
 
 .realname, .profile-status {

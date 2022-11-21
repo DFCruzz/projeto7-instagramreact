@@ -6,7 +6,7 @@ import SideFooter from "./SideFooter";
 
 export default function SideContainer() {
     return (
-        <div class="side-container">
+        <div className="side-container">
             <UserProfile />
             <SuggestionMenu />
             <Suggestions />

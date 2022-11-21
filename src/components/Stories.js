@@ -8,23 +8,23 @@ export default function Stories() {
     ]
 
     return (
-        <div class="story-container">
-            {storiesArray.map(x => <Story name={x.name} link={x.link}/>)}
+        <div className="story-container">
+            {storiesArray.map(x => <Story key={x.name} name={x.name} link={x.link}/>)}
         </div>
     )
 }
 
 function Story(props) {
     return (
-        <div class="story-block">
-            <div class="story-border">
-                <img class="border-img" src="/./assets/img/stories_background.jpg" alt="img" />
-                <div class="story-icon">
-                    <a href="/#"><img src={props.link} /></a>
+        <div className="story-block">
+            <div className="story-border">
+                <img className="border-img" src="/./assets/img/stories_background.jpg" alt="img" />
+                <div className="story-icon">
+                    <a><img src={props.link} /></a>
                 </div>
             </div>
-            <div class="story-name">
-                <a href="/#"><span>{props.name}</span></a>
+            <div className="story-name">
+                <a><span>{props.name}</span></a>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import Posts from "./Posts"
 
 export default function MainContainer() {
     return (
-        <div class="main-container">
+        <div className="main-container">
             <Stories />
             <Posts />
         </div>

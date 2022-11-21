@@ -8,39 +8,25 @@ export default function Suggestions() {
     ]
 
     return (
-        <div class="suggestions-preview">
-            {suggestionsArray.map(x => <Suggestion name={x.name} image={x.image} status={x.status} />)}
+        <div className="suggestions-preview">
+            {suggestionsArray.map(x => <Suggestion key={x.name} name={x.name} image={x.image} status={x.status} />)}
         </div>
     )
 }
 
 function Suggestion(props) {
     return (
-        <div class="suggestion-box">
-            <div class="user-profile smaller">
-                <div class="user-image">
-                    <img src={props.image} />
+        <div className="suggestion-box">
+            <div className="user-profile smaller">
+                <div className="suggestion-image">
+                    <img src={props.image} alt={props.name} />
                 </div>
-                <div class="user-id">
-                <div class="nickname">{props.name}</div>
-                <div class="profile-status">{props.status}</div>
+                <div className="user-id">
+                <div className="nickname">{props.name}</div>
+                <div className="profile-status">{props.status}</div>
             </div>
             </div>
-            <div class="follow-button">Seguir</div>
+            <div className="follow-button">Seguir</div>
         </div>
     )
 }
-
-
-<div class="suggestion-box">
-    <div class="user-profile smaller">
-        <div class="user-image">
-            <img src="./assets/img/badvibesmemes 1.jpg" alt="badvibesmemes" />
-        </div>
-        <div class="user-id">
-            <div class="nickname">bad.vibes.memes</div>
-            <div class="profile-status">Segue você</div>
-        </div>
-    </div>
-    <div class="follow-button">Seguir</div>
-</div>
